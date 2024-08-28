@@ -1,0 +1,453 @@
+$
+$ load the data
+$
+default vlbaload
+datain 'bg147:epochb.uvf'
+outname 'epoch b'
+vlbaload
+$
+$ get a summary of the data
+$
+default vlbasumm
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+docrt false
+outprint 'bg147:epochb-summ.txt'
+vlbasumm
+$
+$ results
+$ 
+$ 
+$       localhos   PRTAN(31DEC23)    1965               28-SEP-2023   12:36:36               Page    1
+$ File=EPOCH B     .UVDATA.   1     An.ver=   1     Vol= 1     User= 1965
+$ Array= VLBA         Freq= 22233.900000 MHz     Ref.date= 23-JUL-2004
+$  
+$  
+$ Array reference position in meters (Earth centered)
+$ Array BX=         0.00000    BY=        -0.00000    BZ=         0.00000
+$ Polar X =   0.05170 Polar Y =   0.51700 arcsec
+$ Earth rotation rate =  360.9856449733 degrees / IAT day
+$ GST at UT=0 =  301.0706603642 degrees
+$ UT1-UTC=     -0.4568800   Data time(UTC     )-UTC=      0.0000000 seconds
+$ XYZHAND = 'RIGHT   '    TFRAME = '?????   '
+$ Solutions not yet determined for a particular FREQID
+$  
+$ Ant   1 = BR       BX= -2112065.0767 BY= -3705356.5028 BZ=  4726813.7268
+$ Mount=ALAZ  Axis offset=  2.1319 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant   2 = FD       BX= -1324009.2145 BY= -5332181.9610 BZ=  3231962.4279
+$ Mount=ALAZ  Axis offset=  2.1353 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant   3 = HN       BX=  1446375.0066 BY= -4447939.6599 BZ=  4322306.1432
+$ Mount=ALAZ  Axis offset=  2.1313 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant   4 = KP       BX= -1995678.7216 BY= -5037317.7047 BZ=  3357328.0703
+$ Mount=ALAZ  Axis offset=  2.1368 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant   5 = LA       BX= -1449752.4585 BY= -4975298.5784 BZ=  3709123.8787
+$ Mount=ALAZ  Axis offset=  2.1367 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant   6 = NL       BX=  -130872.3626 BY= -4762317.1020 BZ=  4226851.0133
+$ Mount=ALAZ  Axis offset=  2.1353 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant   7 = OV       BX= -2409150.2440 BY= -4478573.1744 BZ=  3838617.3607
+$ Mount=ALAZ  Axis offset=  2.1336 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant   8 = PT       BX= -1640953.8190 BY= -5014816.0239 BZ=  3575411.8182
+$ Mount=ALAZ  Axis offset=  2.1395 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant   9 = SC       BX=  2607848.5838 BY= -5488069.6100 BZ=  1932739.6190
+$ Mount=ALAZ  Axis offset=  2.1266 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$ Ant  10 = MK       BX= -5464075.0645 BY= -2495248.6440 BZ=  2148297.0759
+$ Mount=ALAZ  Axis offset=  2.1370 meters    IFA               IFB
+$ Feed polarization type =                    R                 L
+$  
+$  
+$          Relative antenna positions wrt to new center:
+$ Array BX=  -1247233.33710    BY=  -4573711.89611    BZ=   3506945.11340
+$  
+$ Ant   1 = BR       BX= -1062820.0794 BY=   610236.4344 BZ=  1219868.6134
+$       localhos   PRTAN(31DEC23)    1965               28-SEP-2023   12:36:36               Page    2
+$ File=EPOCH B     .UVDATA.   1     An.ver=   1     Vol= 1     User= 1965
+$ Array= VLBA         Freq= 22233.900000 MHz     Ref.date= 23-JUL-2004
+$  
+$ Ant   2 = FD       BX=   125474.2602 BY=  -751949.1902 BZ=  -274982.6855
+$ Ant   3 = HN       BX=  2565627.1076 BY=   830001.2708 BZ=   815361.0298
+$ Ant   4 = KP       BX=  -600108.9704 BY=  -644181.7003 BZ=  -149617.0431
+$ Ant   5 = LA       BX=   -89731.4682 BY=  -440720.0036 BZ=   202178.7653
+$ Ant   6 = NL       BX=  1126653.2361 BY=   111741.8211 BZ=   719905.8999
+$ Ant   7 = OV       BX= -1146014.2581 BY=  -213900.9004 BZ=   331672.2473
+$ Ant   8 = PT       BX=  -263800.4625 BY=  -529148.3586 BZ=    68466.7048
+$ Ant   9 = SC       BX=  3959830.8305 BY=   132084.9703 BZ= -1574205.4944
+$ Ant  10 = MK       BX= -4615110.1960 BY=   895835.6564 BZ= -1358648.0375
+$       localhos   LISTR(31DEC23)    1965               28-SEP-2023   12:36:36               Page    1
+$ File = EPOCH B     .UVDATA.   1 Vol = 1  Userid = 1965
+$ Freq = 22.233900000 GHz   Ncor =  2   No. vis =   2072399
+$ Scan summary listing
+$  
+$ Scan      Source      Qual  Calcode Sub         Timerange          FrqID   START VIS  END VIS
+$    1 3C84            : 0000  N        1  0/07:07:07 -   0/07:18:00     1       1      54534
+$    2 CEPAHW2         : 0000           1  0/07:18:09 -   0/08:12:51     1   54535     384651
+$    3 3C454.3         : 0000  N        1  0/08:15:28 -   0/08:26:18     1  384652     451295
+$    4 CEPAHW2         : 0000           1  0/08:26:26 -   0/09:21:08     1  451296     773406
+$    5 3C454.3         : 0000  N        1  0/09:23:47 -   0/09:34:36     1  773407     839245
+$    6 CEPAHW2         : 0000           1  0/09:34:46 -   0/10:29:27     1  839246    1167636
+$    7 3C454.3         : 0000  N        1  0/10:32:05 -   0/10:42:55     1 1167637    1234542
+$    8 CEPAHW2         : 0000           1  0/10:43:04 -   0/11:37:46     1 1234543    1562751
+$    9 3C454.3         : 0000  N        1  0/11:40:25 -   0/11:50:27     1 1562752    1619200
+$   10 CEPAHW2         : 0000           1  0/11:51:20 -   0/12:46:06     1 1619201    1947379
+$   11 3C454.3         : 0000  N        1  0/12:46:14 -   0/12:56:03     1 1947380    2007813
+$   12 CEPAHW2         : 0000           1  0/12:56:11 -   0/13:06:59     1 2007814    2072399
+$  
+$ Source summary
+$ Velocity type = 'GEOCENTR'    Definition = 'OPTICAL '
+$  
+$   ID Source           Qual  Calcode RA(2000.0)     Dec(2000.0)   IFlux   QFlux   UFlux   VFlux  No. vis
+$    1 3C84            : 0000   N     03:19:48.1601  41:30:42.103   0.000   0.000   0.000   0.000   54534
+$    2 CEPAHW2         : 0000         22:56:18.0826  62:01:47.895   0.000   0.000   0.000   0.000 1701593
+$    3 3C454.3         : 0000   N     22:53:57.7479  16:08:53.561   0.000   0.000   0.000   0.000  316272
+$  
+$   ID Source            Freq(GHz) Velocity(Km/s) Rest freq (GHz)
+$    1 All Sources         22.2339         0.0000         22.2339
+$  
+$ Frequency Table summary uses reference channel     1.00
+$ FQID IF#      Freq(GHz)      BW(kHz)   Ch.Sep(kHz)  Sideband  Bandcode
+$    1   1      22.23390000    8000.0005     15.6250      1
+$
+$ We'll use 3C84 and 3C454.3 for bandpass calibration
+$ 3C454.3 for delay (no need for multiband; there's only one IF)
+$ Use Pie Town (antenna 8) for reference antenna (it's near the center of the array)
+$
+$ interactive editing of the TY table; look for outliers
+$
+default edita
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+inext 'ty'
+inver 1
+expert false
+crowded true
+do3color true
+flagver 1
+outfgver 2
+$ commented out because it is interactive
+$ go edita
+$
+$ There's some weirdness on antenna 9 (SC) in the middle of the time range - flagged
+$ Otherwise things look good
+$
+$ Earth-Orientation Parameters Update
+$
+default vlbaeops
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+vlbaeops
+$
+$ CL.1 --> CL.2
+$
+$ Correct for digital sampling thresholds
+$
+default vlbaccor
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+vlbaccor
+$
+$ instrumental delays - needed before bandpass
+$
+default vlbampcl
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+refant 8
+$
+$ Pick a 2 minute scan on 3C454.3
+$ Note: this will change for other epochs.
+$ Use the output of VLBASUMM to decide.
+$
+timer 0 8 20 0 0 8 22 0
+vlbampcl
+$
+$ --> SN.2
+$ CL.3 --> CL.4
+$
+$
+$ Bandpass is particularly challenging
+$ Both 3C84 and 3C454.3 are pretty weak at 22 GHz
+$ 3C454.3 is stronger .
+$ I'll try CPASS and hope for the best
+$
+default cpass
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+refant 8
+calsour '3C454.3',''
+docal 1
+gainuse 0
+bpassprm(5) 1
+bpassprm(10) 1
+doscale false
+cparm 30 1000 0
+go cpass
+$
+$ Use the default a priori amplitude correction.
+$ We may need to revisit and apply the spectral template
+$ correction.
+$
+default vlbaamp
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+vlbaamp
+$
+$ --> SN.3 sampler corrections
+$ --> SN.4 gain corrections
+$ CL.4 (mpcl) --> CL.5 (sampler) --> CL.6 (gain)
+$
+$ Correct for position angle rotation of feeds
+$ Not really necessary for this work, but I'm a creature
+$ of habit.
+$
+default vlbapang
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+vlbapang
+$
+$ CL.6 --> CL.7 (position angle)
+$
+$ delay calibration using 3C454.3
+$
+default vlbafrgp
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+$
+$ Don't bother with 3C84
+$
+calsour '3C454.3',''
+source 'CEPAHW2','3C454.3'
+$
+$ zero rates and phases, not delays
+$
+dparm(8) 5
+refant 8
+$ solint 2, lest our memory runneth over
+solint 2
+vlbafrgp
+$
+$ --> SN.5
+$ CL.7 --> CL.8 (delays)
+$
+$ I used POSSM to look at the spectrum, try to identify the brightest
+$ spectral peak on most baselines. Channel 245 looks good for epoch B.
+$
+default possm
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+docal 1
+gainuse 0
+doband 1
+bpver 1
+source 'cepahw2',''
+dotv 1
+$ I interactively changed bchan and echan, narrowing down the range to identify
+$ the brightest channel
+bchan 235
+echan 260
+antennas 8 0
+$ go possm
+$
+$ Now fit for rates using brightest maser
+$ this will probably work for all epochs, since they are close in time
+$
+default vlbafrgp
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+calsour 'CEPAHW2',''
+bchan 245
+echan 245
+solint 2
+refant 8
+source 'CEPAHW2',''
+$
+$ zero out delays
+$ they are meaningless for solutions on a single channel
+$
+dparm(8) 2
+vlbafrgp
+$
+$ --> SN.6
+$ CL.8 --> CL.9 (self-cal rates and phases on channel 245)
+$
+$ apply the calibration and split out the source
+$
+default split
+INNAME 'EPOCH B'
+INCLASS 'UVDATA' 
+INSEQ 1
+INDISK 1
+docal 1
+gainuse 0
+doband 1
+bpver 1
+source 'cepahw2',''
+go split
+$
+$ Creates CEPAHW2.SPLIT.1
+$ rename it to EPOCH B.SPLIT.1
+$
+INNAME 'CEPAHW2'
+INCLASS 'SPLIT' 
+INSEQ 1
+INDISK 1
+outname 'epoch b'
+outcl 'split'
+outseq 1
+outdi 1
+rename
+$
+$ Use CVEL to shift frequency grid to velocity grid
+$
+default cvel
+INNAME 'EPOCH B'
+INCLASS 'SPLIT' 
+INSEQ 1
+INDISK 1
+freqid 1
+$
+$ restfreq for ortho-water maser is 22235.07985 MHz
+$ reference velocity chosen to minimize channel shifts
+$ (here, I got shifts of around 0.25 channel). These
+$ settings should be ok for all epochs, I think?
+$
+aparm -11.8e3,256,0,0,22235e6,0.07985e6,0
+$
+$ Hanning smooth to avoid interpolation artifacts
+$
+aparm(9) = 2
+$
+go cvel
+$
+$ We Hanning-smoothed during CVEL (otherwise there would be negative artifacts).
+$ Average channels to ensure they are independent.
+default avspc
+INNAME 'EPOCH B'
+INCLASS 'CVEL' 
+INSEQ 1
+INDISK 1
+avoption 'subs'
+channel 2
+go avspc
+$
+$ --> EPOCH B.SUB SP.1
+$
+$ brightest channel is either 122 or 123; it probably doesn't matter.
+$ let's try phase-only self-calibration
+$
+default imagr
+INNAME 'EPOCH B'
+INCLASS 'sub sp' 
+INSEQ 1
+INDISK 1
+bchan 122
+echan 122
+cell 0.08e-3
+imsize 512
+solint 1
+dotv 1
+refant 8
+nmaps 3
+niter 10000
+go imagr
+$
+default ccmrg
+inname 'epoch b'
+incl 'icl001'
+inseq 1
+go ccmrg
+$
+default calib
+INNAME 'EPOCH B'
+INCLASS 'sub sp' 
+INSEQ 1
+INDISK 1
+in2name 'epoch b'
+in2cl 'icl001'
+in2seq 1
+in2ver 0
+ichansel 122 122 1 1 0
+refant 8
+solint 1
+solmode 'p'
+go calib
+$
+$ got 4925 good solutions, 41 failed. Sounds good.
+$
+tget imagr
+incl 'calib'
+inseq 1
+go imagr
+$
+$ rms dropped from 352 mJy to 214 mJy. Nice
+$
+tget ccmrg
+inseq 2
+go ccmrg
+$
+$ try a&p selfcal
+$
+tget calib
+solmode 'a&p'
+solint 20
+incl 'calib'
+inseq 1
+in2seq 2
+go calib
+$
+$ 310 good solutions; 7 failed
+$
+tget imagr
+incl 'calib'
+inseq 2
+go imagr
+$
+$ rms dropped to 101 mJy. Sidelobes are still pretty bad.
+$ dynamic range (peak / rms) = about 700 (worse closer to the source)
+$
+$ Finally, use FIXWT to fix the weights for difmap
+$
+default fixwt
+INNAME 'EPOCH B'
+INCLASS 'CALIB' 
+INSEQ 2
+INDISK 1
+go fixwt
+
